@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="AutoStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Layer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4 x 2</Value>
+    </Setting>
+    <Setting Name="Proportional" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="Method" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Average</Value>
+    </Setting>
+    <Setting Name="Hscan" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30 %</Value>
+    </Setting>
+    <Setting Name="Vscan" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30 %</Value>
+    </Setting>
+    <Setting Name="ArduinoSerialPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM7</Value>
+    </Setting>
+    <Setting Name="ArduinoBaudRate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">9600</Value>
+    </Setting>
+    <Setting Name="SkipDarkPixel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RunMinimized" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Mode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ArduinoMaxRetries" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="StaticColorTop" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+    <Setting Name="StaticColorBottom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+    <Setting Name="StaticColorLeft" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+    <Setting Name="StaticColorRight" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FFFFFF</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

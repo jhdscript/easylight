@@ -1,0 +1,288 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:exttk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    Title="PixelLight" Height="400" MaxHeight="400" Width="600" MaxWidth="600" ResizeMode="CanMinimize" Icon="logo.ico">
+
+    <Window.Resources>
+        <ContextMenu x:Key="NotifierContextMenu">
+            <ContextMenu.Items>
+                <MenuItem x:Name="MenuMaximize" Header="Maximize EasyLight" Click="MenuMaximize_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/logo.png" Width="16" Height="16" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuWebsite" Header="Go to EasyLight WebSite" Click="MenuWebsite_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/internet.png" Width="16" Height="16" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="MenuExit" Header="Exit" Click="MenuExit_Click">
+                    <MenuItem.Icon>
+                        <Image Source="Images/exit.png" Width="16" Height="16" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </ContextMenu.Items>
+        </ContextMenu>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <TabControl x:Name="TabControlMain" Grid.Row="0">
+            <TabItem x:Name="TabItemCapture" Header="Dynamic Mode Settings">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="5" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="GridCaptureSettings" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="LblProportional" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Proportional" />
+                        <ComboBox x:Name="CboProportional" Grid.Column="2" Grid.Row="0">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiProportional1" Content="1" />
+                                <ComboBoxItem x:Name="CbiProportional2" Content="2" />
+                                <ComboBoxItem x:Name="CbiProportional3" Content="3" />
+                                <ComboBoxItem x:Name="CbiProportional4" Content="4" />
+                                <ComboBoxItem x:Name="CbiProportional5" Content="5" IsSelected="True"/>
+                                <ComboBoxItem x:Name="CbiProportional6" Content="6" />
+                                <ComboBoxItem x:Name="CbiProportional7" Content="7" />
+                                <ComboBoxItem x:Name="CbiProportional8" Content="8" />
+                                <ComboBoxItem x:Name="CbiProportional9" Content="9" />
+                                <ComboBoxItem x:Name="CbiProportional10" Content="10" />
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock x:Name="LblLayer" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Layers (L x H)" />
+                        <ComboBox x:Name="CboLayer" Grid.Column="6" Grid.Row="0">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiLayer4x2" Content="4 x 2" IsSelected="True"/>
+                                <ComboBoxItem x:Name="CbiLayer2x2" Content="2 x 2" />
+                                <ComboBoxItem x:Name="CbiLayer3x2" Content="3 x 2" />
+                                <ComboBoxItem x:Name="CbiLayer3x1" Content="3 x 1" />
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock x:Name="LblMethod" Grid.Column="8" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Method" />
+                        <ComboBox x:Name="CboMethod" Grid.Column="10" Grid.Row="0">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiMethodMax" Content="Max" />
+                                <ComboBoxItem x:Name="CbiMethodAverage" Content="Average" IsSelected="True"/>
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock x:Name="LblHscan" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Hscan" />
+                        <ComboBox x:Name="CboHscan" Grid.Column="2" Grid.Row="2">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiHscan10" Content="10 %" />
+                                <ComboBoxItem x:Name="CbiHscan20" Content="20 %" />
+                                <ComboBoxItem x:Name="CbiHscan30" Content="30 %" IsSelected="True"/>
+                                <ComboBoxItem x:Name="CbiHscan40" Content="40 %" />
+                                <ComboBoxItem x:Name="CbiHscan50" Content="50 %" />
+                                <ComboBoxItem x:Name="CbiHscan60" Content="60 %" />
+                                <ComboBoxItem x:Name="CbiHscan70" Content="70 %" />
+                                <ComboBoxItem x:Name="CbiHscan80" Content="80 %" />
+                                <ComboBoxItem x:Name="CbiHscan90" Content="90 %" />
+                                <ComboBoxItem x:Name="CbiHscan100" Content="100 %" />
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock x:Name="LblVscan" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Vscan" />
+                        <ComboBox x:Name="CboVscan" Grid.Column="6" Grid.Row="2">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiVscan10" Content="10 %" />
+                                <ComboBoxItem x:Name="CbiVscan20" Content="20 %" />
+                                <ComboBoxItem x:Name="CbiVscan30" Content="30 %" IsSelected="True"/>
+                                <ComboBoxItem x:Name="CbiVscan40" Content="40 %" />
+                                <ComboBoxItem x:Name="CbiVscan50" Content="50 %" />
+                                <ComboBoxItem x:Name="CbiVscan60" Content="60 %" />
+                                <ComboBoxItem x:Name="CbiVscan70" Content="70 %" />
+                                <ComboBoxItem x:Name="CbiVscan80" Content="80 %" />
+                                <ComboBoxItem x:Name="CbiVscan90" Content="90 %" />
+                                <ComboBoxItem x:Name="CbiVscan100" Content="100 %" />
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <CheckBox x:Name="ChkSkipDarkPixels" Grid.Column="10" Grid.Row="2" VerticalAlignment="Center" Content="Skip Dark Pixels" />
+                    </Grid>
+
+                    <Grid x:Name="GridDraw" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="200" Background="LightGray">
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="TabItemStaticMode" Header="Static Mode Settings">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    
+                    <exttk:ColorPicker x:Name="ColorPickerTop" Grid.Row="0" Grid.Column="1" />
+                    <exttk:ColorPicker x:Name="ColorPickerBottom" Grid.Row="2" Grid.Column="1"/>
+                    <exttk:ColorPicker x:Name="ColorPickerLeft" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <exttk:ColorPicker.LayoutTransform>
+                            <RotateTransform CenterX="0" CenterY="0" Angle="-90" />
+                        </exttk:ColorPicker.LayoutTransform>
+                    </exttk:ColorPicker>
+                    <exttk:ColorPicker x:Name="ColorPickerRight" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <exttk:ColorPicker.LayoutTransform>
+                            <RotateTransform CenterX="0" CenterY="0" Angle="-90" />
+                        </exttk:ColorPicker.LayoutTransform>
+                    </exttk:ColorPicker>
+                </Grid>
+            </TabItem>
+
+            <TabItem x:Name="TabItemArduino" Header="Arduino Settings">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="5" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="GridArduinoSettings" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition Width="3" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="5" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <TextBlock x:Name="LblPortCom" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Port COM" />
+                        <ComboBox x:Name="CboPortCom" Grid.Column="2" Grid.Row="0" />
+
+                        <TextBlock x:Name="LblBaudRate" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Baud Rate" />
+                        <ComboBox x:Name="CboBaudRate" Grid.Column="6" Grid.Row="0">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiBaudRate300" Content="300" />
+                                <ComboBoxItem x:Name="CbiBaudRate1200" Content="1200" />
+                                <ComboBoxItem x:Name="CbiBaudRate2400" Content="2400" />
+                                <ComboBoxItem x:Name="CbiBaudRate4800" Content="4800" />
+                                <ComboBoxItem x:Name="CbiBaudRate9600" Content="9600" />
+                                <ComboBoxItem x:Name="CbiBaudRate14400" Content="14400" />
+                                <ComboBoxItem x:Name="CbiBaudRate19200" Content="19200" />
+                                <ComboBoxItem x:Name="CbiBaudRate28800" Content="28800" />
+                                <ComboBoxItem x:Name="CbiBaudRate38400" Content="38400" />
+                                <ComboBoxItem x:Name="CbiBaudRate57600" Content="57600" />
+                                <ComboBoxItem x:Name="CbiBaudRate115200" Content="115200" IsSelected="True" />
+                            </ComboBox.Items>
+                        </ComboBox>
+
+                        <TextBlock x:Name="LblMaxRetries" Grid.Column="8" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Max Retries" />
+                        <ComboBox x:Name="CboMaxRetries" Grid.Column="10" Grid.Row="0">
+                            <ComboBox.Items>
+                                <ComboBoxItem x:Name="CbiMaxRetries30" Content="30" IsSelected="True" />
+                                <ComboBoxItem x:Name="CbiMaxRetries50" Content="50" />
+                                <ComboBoxItem x:Name="CbiMaxRetries100" Content="100" />
+                                <ComboBoxItem x:Name="CbiMaxRetries250" Content="250" />
+                                <ComboBoxItem x:Name="CbiMaxRetries500" Content="500" />
+                            </ComboBox.Items>
+                        </ComboBox>
+                    </Grid>
+
+                    <ListBox x:Name="ListBoxArduinoLogs" Grid.Row="2">
+                        <ListBox.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem x:Name="MenuListBoxSave" Header="Save log" Click="MenuListBoxSave_Click">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/save.png" Width="16" Height="16" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                                <Separator />
+                                <MenuItem x:Name="MenuListBoxArduinoClear" Header="Clear log" Click="MenuListBoxArduinoClear_Click">
+                                    <MenuItem.Icon>
+                                        <Image Source="Images/delete.png" Width="16" Height="16" />
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                        </ListBox.ContextMenu>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Grid x:Name="GridButtons" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel x:Name="StackPanelMode" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock x:Name="LblMode" Margin="5,0,0,0" VerticalAlignment="Center" Text="Mode" />
+                <ComboBox x:Name="CboMode" Margin="5,0,0,0" Width="150">
+                    <ComboBox.Items>
+                        <ComboBoxItem x:Name="CbiModeDynamicColor" Content="Dynamic Screen Color" Tag="0" IsSelected="True"/>
+                        <ComboBoxItem x:Name="CbiModeStaticColor" Content="Static Ambient Color" Tag="1"/>
+                    </ComboBox.Items>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel x:Name="StackPanelButtons" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <CheckBox x:Name="ChkRunMinimized" VerticalAlignment="Center" Margin="0,0,5,0" Content="Minimized" ToolTip="Run Minimized" />
+                <CheckBox x:Name="ChkAutoStart" VerticalAlignment="Center" Margin="0,0,5,0" Content="AutoStart" ToolTip="AutoStart at Windows startup" />
+                <Button x:Name="BtSave" Content="Save" Width="80" Margin="0,0,5,0" Click="BtSave_Click"/>
+                <Button x:Name="BtExit" Content="Exit" Width="80" Margin="0,0,5,0" Click="BtExit_Click"/>
+            </StackPanel>
+        </Grid>
+
+
+
+        <StatusBar x:Name="BarStatus" Grid.Row="3">
+            <StatusBar.Items>
+                <TextBlock x:Name="LblStatusArduino" Text="Arduino: " />
+                <Image x:Name="ImgStatusArduinoNotConnected" Source="Images/ledred.png" Width="12" Height="12" ToolTip="Not connected" />
+                <Image x:Name="ImgStatusArduinoPending" Source="Images/ledyellow.png" Width="12" Height="12" ToolTip="Connection pending" Visibility="Collapsed" />
+                <Image x:Name="ImgStatusArduinoConnected" Source="Images/ledgreen.png" Width="12" Height="12" ToolTip="Connected" Visibility="Collapsed" />
+                <Separator />
+                <TextBlock x:Name="LblStatusCpu" Text="Cpu: " />
+                <TextBlock x:Name="TxtStatusCpu" Text="n/a" />
+                <Separator />
+                <TextBlock x:Name="LblStatusMemory" Text="Mem: " />
+                <TextBlock x:Name="TxtStatusMemory" Text="n/a" />
+                <Separator />
+                <TextBlock x:Name="LblStatusNbLoop" Text="Nb Loops / sec: " />
+                <TextBlock x:Name="TxtStatusNbLoop" Text="" />
+            </StatusBar.Items>
+        </StatusBar>
+    </Grid>
+</Window>

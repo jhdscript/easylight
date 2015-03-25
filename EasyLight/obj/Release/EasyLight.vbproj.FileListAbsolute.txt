@@ -1,0 +1,16 @@
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\EasyLight.exe.config
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\EasyLight.exe
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\EasyLight.pdb
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\EasyLight.xml
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\SlimDX.dll
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\bin\Release\WPFToolkit.Extended.dll
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\MainWindow.baml
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\MainWindow.g.vb
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\Application.g.vb
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight_MarkupCompile.cache
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.g.resources
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.Resources.resources
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.vbproj.GenerateResource.Cache
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.exe
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.xml
+C:\Users\jcestevez\Documents\Visual Studio 2013\Projects\EasyLight\EasyLight\obj\Release\EasyLight.pdb

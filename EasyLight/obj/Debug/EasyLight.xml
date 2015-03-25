@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EasyLight
+</name>
+</assembly>
+<members>
+<member name="M:EasyLight.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:EasyLight.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:EasyLight.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:EasyLight.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:EasyLight.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="P:EasyLight.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:EasyLight.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:EasyLight.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:EasyLight.My.MyWpfExtension.Application">
+	<summary>
+ Returns the application object for the running application
+ </summary>
+</member><member name="P:EasyLight.My.MyWpfExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:EasyLight.My.MyWpfExtension.User">
+	<summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member><member name="P:EasyLight.My.MyWpfExtension.Log">
+	<summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member><member name="P:EasyLight.My.MyWpfExtension.Windows">
+	<summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member><member name="T:EasyLight.My.MyWpfExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.#ctor(System.Windows.Window@)">
+	<summary>
+Initializes a new instance of the MinimizeToTrayInstance class.
+</summary>
+	<param name="window">Window instance to attach to.</param>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.HandleStateChanged(System.Object,System.EventArgs)">
+	<summary>
+Handles the Window's StateChanged event.
+</summary>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.SetSystrayIcon(System.Boolean,System.String)">
+	<summary>
+Set an icon to the systray.
+</summary>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.HandleNotifyMouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+Handles a click on the notify icon or its balloon.
+</summary>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.HandleNotifyMouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+Handles a mouse down.
+</summary>
+</member><member name="M:EasyLight.MinimizeToTray.MinimizeToTrayInstance.ShowBalloon(System.String,System.String,System.Windows.Forms.ToolTipIcon)">
+	<summary>
+Show a balloon tooltip.
+</summary>
+</member><member name="T:EasyLight.MinimizeToTray.MinimizeToTrayInstance">
+	<summary>
+Class implementing "minimize to tray" functionality for a Window instance.
+</summary>
+</member><member name="M:EasyLight.MinimizeToTray.Enable(System.Windows.Window@)">
+	<summary>
+Enables "minimize to tray" behavior for the specified Window.
+</summary>
+</member><member name="P:EasyLight.MinimizeToTray.CurrentSystray">
+	<summary>
+Current MinimizeToTray object for the current application
+</summary>
+</member><member name="T:EasyLight.MinimizeToTray">
+	<summary>
+Class implementing support for "minimize to tray" functionality.
+</summary>
+</member>
+</members>
+</doc>
